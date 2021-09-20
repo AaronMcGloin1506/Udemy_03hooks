@@ -27,7 +27,7 @@ const App = () => {
         <div className="container">
           <Route path="/" exact component={Home}/>
           <Route path="/posts" exact component={Post}/>
-          <Route path="/postItem/:id" exact component={PostItem}/>
+          <Route path="/postItem/:id" exact component={PostItem}/>  
           <Route path="/profile" exact component={Profile}/>
         </div>
 
