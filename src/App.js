@@ -16,7 +16,12 @@ const App = () => {
             <Route path="/postItem/:id" component={PostItem}/> 
             <Route path="/posts" component={Post}/>
             <Route path="/profile" component={Profile}/>
-            <Route path="/" component={Home}/>
+            <Route path="/" exact component={Home}/>
+
+            <Route render={()=>(
+              <h3>Ooops page not found !!</h3>
+            )}/>
+
           </Switch>
         </div>
 
